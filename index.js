@@ -10,7 +10,7 @@ const threshold = process.env.threshold;
 const logPath = process.env.logPath;
 const envParamKey = process.env.envParamKey
 
-const writeLog = () => {
+const writeLog = (log) => {
   const log = getLogString(process.env[envParamKey]);
   if (!existsSync(logPath)) {
     fs.writeFile(logPath, log);
@@ -39,7 +39,7 @@ const calculate = async () => {
   writeLog();
   /**
    * Had to use decimal.js library to handle floats with high precision. 
-   * Technicallly, I'm using toFixed(18) to cut precision because it uses 20 places, not 18
+   * Technicallly, I'm using toPrecision(18) to cut precision because it uses 20 places, not 18
    */
   const result = Decimal(process.env[envParamKey]).times(2).plus('1.5').dividedBy('7.5').toPrecision(18);
   await updateEnvValue(result);

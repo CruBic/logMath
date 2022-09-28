@@ -22,7 +22,7 @@ threshold=120000
  - ```peccalaValue``` stores input value. This parameter name is configurable and can be chanded, see ```envParamKey```
  - ```logPath``` path to desired logfile. If file doesn't exist, it will be created
  - ```envParamKey``` sets name for desired input value. It means that "peccalaValue" can be changed to any desired name.
- - ```threshold``` sets time interval tim in milliseconds.
+ - ```threshold``` sets time interval in milliseconds.
 
 ### Log example
 For given input values

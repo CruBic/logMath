@@ -51,4 +51,5 @@ we will have listed logs:
 ```
 
 ### Possible places for improvement
-Log shows history of input change. This means that after script termination last log entry and actual value would be different.
+ - Used function is a linear one, but results are not. May be an issue with precision. I submit test task as is, knowing that results may be incorrect but right now I need much more time to understand why.
+ - Log shows history of input change. This means that after script termination last log entry and actual value would be different.

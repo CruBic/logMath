@@ -47,7 +47,7 @@ const calculate = async () => {
 
 
 /**
- * using calculate();setInterval(calculate, threshold); is not most elegant solution but is the silplest one.
+ * using calculate();setInterval(calculate, threshold); is not most elegant solution but is the simplest one.
  * Considering, that I'm using clearInterval later I can't see major downfals of this solution
  */
 calculate();
